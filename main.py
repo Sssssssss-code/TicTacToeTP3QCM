@@ -7,8 +7,10 @@ class TicTacToe:
         self.iswon=True
     
     def check_move_validity(self, movex, movey):
-        #to complete
-        pass
+        if self.grid[movex, movey]==0 and not(self.check_win):
+            return True
+        return False
+
 
     def check_win(self):
         #to complete
